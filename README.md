@@ -4,7 +4,7 @@
 
 This project simulates an end to end NHS style clinical data engineering pipeline using Azure SQL, Azure Data Factory, Azure Storage, Python, Pandas, PySpark, and SQL.
 
-The project demonstrates how NHS style operational data can be extracted from Azure SQL, landed into a cloud data lake, validated, transformed through Bronze/Silver/Gold layers and prepared for analytics and downstream platform ingestion.
+The project demonstrates how NHS style operational data can be extracted from Azure SQL, landed into a cloud data lake, validated, transformed through Bronze / Silver / Gold layers and prepared for analytics and downstream platform ingestion.
 
 ## Architecture
 
@@ -78,7 +78,7 @@ The project includes advanced SQL KPI scripts using:
 - Readmission-style logic
 - Department pressure scoring
 
-SQL file: src/sql/advanced_nhs_kpis.sql
+[SQL file:](src/sql/advanced_nhs_kpis.sql)
 
 ## Key KPIs Produced
 
@@ -92,7 +92,6 @@ SQL file: src/sql/advanced_nhs_kpis.sql
 - Patient demographic breakdown
 
 ## Project Structure
-
 ```
 nhs-azure-clinical-data-pipeline/
 │
@@ -115,9 +114,7 @@ nhs-azure-clinical-data-pipeline/
 ├── images/
 └── README.md
 ```
-
 ## How to Run
-
 ```
 python -m src.azure_extract.test_sql_connection
 python -m src.azure_extract.run_sql_file
@@ -130,20 +127,18 @@ python -m src.pyspark_transforms.silver_to_gold
 python -m src.pyspark_transforms.view_gold_outputs
 python -m src.azure_extract.upload_pipeline_outputs
 ```
-
 ## Azure Data Factory
 
-ADF pipeline created:
-
-pl_sql_to_raw_patients
+ADF pipeline created: pl_sql_to_raw_patients
 
 Purpose:
-
+```
 Azure SQL dbo.patients
         ↓
 ADF Copy Activity
         ↓
 Azure Storage raw/adf_extract/patients.csv
+```
 
 ## Business Value
 
@@ -158,7 +153,7 @@ It supports use cases such as:
 
 ## Portfolio Summary
 
-Built an NHS style Azure clinical data pipeline using Azure SQL, Azure Data Factory, Azure Storage, Python, Pandas, PySpark, and advanced SQL. The project implements source extraction, raw landing, validation, Bronze/Silver/Gold transformation layers, KPI generation, and cloud storage publication.
+Built an NHS style Azure clinical data pipeline using Azure SQL, Azure Data Factory, Azure Storage, Python, Pandas, PySpark, and advanced SQL. The project implements source extraction, raw landing, validation, Bronze / Silver / Gold transformation layers, KPI generation and cloud storage publication.
 
 ## Future Improvements
 
