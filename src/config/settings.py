@@ -1,0 +1,12 @@
+# Azure SQL settings
+SQL_SERVER = "sqlsrv-marcello-dev.database.windows.net"
+SQL_DATABASE = "sqldb-marcello-demo"
+SQL_USERNAME = "YOUR_SQL_USERNAME"
+SQL_PASSWORD = "YOUR_SQL_PASSWORD"
+
+STORAGE_ACCOUNT_NAME = "stmarcellodata001"
+CONTAINER_RAW = "raw"
+CONTAINER_BRONZE = "bronze"
+CONTAINER_SILVER = "silver"
+CONTAINER_GOLD = "gold"
+STORAGE_CONNECTION_STRING = "YOUR_STORAGE_CONNECTION_STRING"
