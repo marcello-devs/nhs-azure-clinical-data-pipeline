@@ -78,7 +78,9 @@ The project includes advanced SQL KPI scripts using:
 - Readmission-style logic
 - Department pressure scoring
 
-[SQL file:](src/sql/advanced_nhs_kpis.sql)
+See SQL examples here:
+
+[SQL KPI Script](src/sql/advanced_nhs_kpis.sql)
 
 ## Key KPIs Produced
 
@@ -129,7 +131,8 @@ python -m src.azure_extract.upload_pipeline_outputs
 ```
 ## Azure Data Factory
 
-ADF pipeline created: pl_sql_to_raw_patients
+ADF pipeline created: 
+pl_sql_to_raw_patients
 
 Purpose:
 ```
@@ -161,7 +164,7 @@ Built an NHS style Azure clinical data pipeline using Azure SQL, Azure Data Fact
 - Azure Key Vault for secrets
 - SQLAlchemy based extraction
 - Power BI dashboard
-- CI/CD with GitHub Actions
+- CI/CD with GitHub actions
 - Automated data quality checks
 - Incremental loading strategy
 
