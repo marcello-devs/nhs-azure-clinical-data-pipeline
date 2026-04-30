@@ -4,9 +4,11 @@
 
 This project simulates an end-to-end NHS-style clinical data engineering pipeline using Azure SQL, Azure Data Factory, Azure Storage, Python, Pandas, PySpark, and SQL.
 
-The project demonstrates how NHS-style operational data can be extracted from Azure SQL, landed into a cloud data lake, validated, transformed through Bronze/Silver/Gold layers, and prepared for analytics and downstream platform ingestion.
+The project demonstrates how NHS style operational data can be extracted from Azure SQL, landed into a cloud data lake, validated, transformed through Bronze/Silver/Gold layers and prepared for analytics and downstream platform ingestion.
 
 ## Architecture
+
+![Project Architecture](images/architecture.png)
 
 Azure SQL Database
         ↓
@@ -28,7 +30,7 @@ Analytics / Reporting / Downstream Platform
 
 - Azure SQL Database
 - Azure Data Factory
-- Azure Storage / Data Lake-style containers
+- Azure Storage / Data Lake style containers
 - Python
 - Pandas
 - PySpark
@@ -66,7 +68,7 @@ Cleaned and enriched datasets including:
 
 ### Gold Layer
 
-Business-ready KPI datasets:
+Business ready KPI datasets:
 
 - Admission_kpis
 - Waiting_list_kpis
@@ -153,7 +155,7 @@ Azure Storage raw/adf_extract/patients.csv
 
 ## Business Value
 
-This project demonstrates how healthcare operational data can be moved from source systems into a governed analytics-ready structure.
+This project demonstrates how healthcare operational data can be moved from source systems into a governed analytics ready structure.
 
 It supports use cases such as:
 - Patient flow monitoring
@@ -164,14 +166,18 @@ It supports use cases such as:
 
 ## Portfolio Summary
 
-Built an NHS-style Azure clinical data pipeline using Azure SQL, Azure Data Factory, Azure Storage, Python, Pandas, PySpark, and advanced SQL. The project implements source extraction, raw landing, validation, Bronze/Silver/Gold transformation layers, KPI generation, and cloud storage publication.
+Built an NHS style Azure clinical data pipeline using Azure SQL, Azure Data Factory, Azure Storage, Python, Pandas, PySpark, and advanced SQL. The project implements source extraction, raw landing, validation, Bronze/Silver/Gold transformation layers, KPI generation, and cloud storage publication.
 
 ## Future Improvements
 
 - Parameterised ADF pipeline for all source tables
 - Azure Key Vault for secrets
-- SQLAlchemy-based extraction
+- SQLAlchemy based extraction
 - Power BI dashboard
 - CI/CD with GitHub Actions
 - Automated data quality checks
 - Incremental loading strategy
+
+## Author
+
+Marcello Da Silva Lopes
